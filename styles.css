@@ -9,6 +9,7 @@
 body {
 	font-family: 'Lexend', sans-serif;
 	color: #111;
+	position: relative;
 }
 
 a:link,
@@ -24,16 +25,40 @@ a:visited {
 	background-color: #b4f461;
 	padding: 12px 32px;
 	border-radius: 8px;
+
+	border: none;
+	cursor: pointer;
+}
+
+.btn-outline {
+	color: #575655;
+	border: 1px solid #575655;
+	background-color: transparent;
+}
+
+.btn-big {
+	padding-block: 16px;
 }
 
 .header {
 	background-color: #f9f7f3;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 .navbar {
-	max-width: 1152px;
+	max-width: 1216px;
 	margin-inline: auto;
 	padding-block: 24px;
+	padding-inline: 32px;
+}
+
+.container {
+	max-width: 1216px;
+	margin-inline: auto;
+	padding-inline: 32px;
 }
 
 .navlist {
@@ -58,4 +83,112 @@ a:visited {
 .brand-logo {
 	width: 48px;
 	height: 48px;
+}
+
+.currency-icon {
+	width: 28px;
+	height: 28px;
+}
+
+.account-balance {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #575655;
+}
+
+.section-btns {
+	background-color: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(10px);
+
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	padding-top: 80px;
+	padding-bottom: 32px;
+
+	position: sticky;
+	top: 96px;
+	left: 0;
+	right: 0;
+}
+
+.card-container {
+	border: 1px solid #f3f3f3;
+	border-radius: 16px;
+	padding: 32px;
+
+	display: flex;
+	gap: 32px;
+}
+
+.donation-box {
+	background-color: #f3f3f3;
+	display: inline-flex;
+	align-items: center;
+	justify-content: start;
+	padding: 10px 16px;
+	border-radius: 8px;
+
+	font-size: 1rem;
+	font-weight: 400;
+	color: #575655;
+
+	margin-bottom: 16px;
+}
+
+.donation-box .currency-icon {
+	margin-right: 8px;
+}
+
+.donation {
+	margin-right: 4px;
+}
+
+.card-heading {
+	font-weight: 800;
+	font-size: 1.25rem;
+
+	margin-bottom: 16px;
+}
+
+.card-description {
+	color: #575655;
+	line-height: 1.7;
+
+	margin-bottom: 24px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+
+	gap: 16px;
+}
+
+.donation-amount {
+	height: 56px;
+
+	border-radius: 8px;
+	font-size: 16px;
+	padding-left: 16px;
+	border: 1px solid #f3f3f3;
+	color: #f9f7f3;
+	font-weight: 200;
+	letter-spacing: 1px;
+}
+
+.section-cards {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+footer {
+	margin-top: 80px;
+	height: 80px;
+	background-color: #f9f7f3;
 }
